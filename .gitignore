@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/&#10;.py[cod]&#10;*$py.class&#10;&#10;# C extensions
+*.so&#10;&#10;# Distribution / packaging
+.Python&#10;build/&#10;develop-eggs/&#10;dist/&#10;downloads/&#10;eggs/&#10;.eggs/&#10;lib/&#10;lib64/&#10;parts/&#10;sdist/&#10;var/&#10;wheels/&#10;share/python-wheels/&#10;*egg-info/&#10;inno/&#10;.egg-info/&#10;.installed.cfg&#10;*.egg&#10;MANIFEST&#10;&#10;# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest&#10;*.spec&#10;&#10;# Installer logs
+pip-log.txt&#10;pip-delete-this-directory.txt&#10;&#10;# Unit test / coverage reports
+htmlcov/&#10;.tox/&#10;.nox/&#10;.coverage&#10;.coverage.*&#10;.cache&#10;nosetests.xml&#10;coverage.xml&#10;*.cover&#10;*.py,cover&#10;.hypothesis/&#10;.pytest_cache/&#10;cover/&#10;.coverage_data/&#10;&#10;# Translations
+*.mo&#10;*.pot&#10;&#10;# Django stuff:
+*.log&#10;local_settings.py&#10;db.sqlite3&#10;db.sqlite3-journal&#10;&#10;# Flask stuff:
+instance/&#10;.webassets-cache&#10;&#10;# Scrapy stuff:
+.scrapy&#10;&#10;# Sphinx documentation
+docs/_build/&#10;&#10;# PyBuilder
+.pybuilder/&#10;target/&#10;&#10;# Jupyter Notebook
+.ipynb_checkpoints&#10;&#10;# IPython
+profile_default/&#10;ipython_config.py&#10;&#10;# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; for a notebook server, we would want to
+#   ignore them since the end user will have their own, and not commit the server config.
+.python-version&#10;&#10;# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock&#10;&#10;# PEP 582; used by e.g. github.com/David-O-Toole/prodigy
+__pypackages__/&#10;&#10;# Celery stuff
+celerybeat-schedule&#10;celerybeat.pid&#10;&#10;# SageMath parsed files
+*.sage.py&#10;&#10;# Environments
+.env&#10;.venv/&#10;env/&#10;ENV/&#10;env.bak/&#10;venv.bak/&#10;&#10;# FastAPI / Uvicorn
+*.log&#10;&#10;# IDE
+.vscode/&#10;.idea/&#10;*.swp&#10;*.swo&#10;&#10;# OS
+.DS_Store&#10;.DS_Store?&#10;._*&#10;Thumbs.db&#10;&#10;# Data (if sensitive)
+data/*&#10;!data/README.md&#10;
+
+src/__pycache__/*;src/*/__pycache__/&#10;
