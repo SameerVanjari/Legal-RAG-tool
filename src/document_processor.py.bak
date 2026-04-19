@@ -4,14 +4,14 @@ for the RAG system.
 """
 import os
 from typing import List, Dict, Any
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import (
     PyPDFLoader,
     Docx2txtLoader,
     TextLoader,
     UnstructuredHTMLLoader
 )
-from langchain_core.documents import Document
+from langchain.schema import Document
 
 
 class LegalDocumentProcessor:

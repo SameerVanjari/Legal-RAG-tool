@@ -1,8 +1,7 @@
 # Core dependencies - using versions compatible with Python 3.13
 langchain==0.1.0
 chromadb==0.4.15
-# Using a simpler embedding approach for now to avoid torch issues
-# sentence-transformers==2.2.0
+openai>=0.27.0
 fastapi==0.104.0
 uvicorn==0.27.0
 streamlit==1.32.0
