@@ -35,3 +35,4 @@ data/*&#10;!data/README.md&#10;
 
 src/__pycache__/*
 chroma_db/*
+.env
