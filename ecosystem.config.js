@@ -27,7 +27,7 @@ module.exports = {
       env: {
         // Streamlit will use the API_BASE_URL from the environment or default to http://localhost:8000
         // We can set it explicitly if needed, but the ui.py already defaults to localhost:8000
-        API_BASE_URL: 'http://localhost:8000',
+        API_BASE_URL: 'http://localhost:5000',
         // Optional: Streamlit specific settings
         STREAMLIT_SERVER_HEADLESS: 'true',
         STREAMLIT_SERVER_ENABLE_CORS: 'false',
