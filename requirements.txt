@@ -14,7 +14,8 @@ requests==2.31.0
 
 # Utilities
 python-dotenv==1.0.0
-pydantic==2.5.0
+# Fixed pydantic version to avoid compilation issues with Python 3.13
+pydantic==2.4.2
 
 # For development/testing - we'll implement a simple embedding fallback
 numpy>=1.24.0
