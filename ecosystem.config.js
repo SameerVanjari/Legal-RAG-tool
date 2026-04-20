@@ -3,9 +3,7 @@ module.exports = {
     {
       name: 'legal-rag-backend',
       cwd: './',
-      script: 'python',
-      args: 'src/main.py',
-      interpreter: 'python3',
+      command: './venv/bin/python src/main.py',
       instances: 1,
       autorestart: true,
       watch: false,
@@ -18,8 +16,7 @@ module.exports = {
     {
       name: 'legal-rag-ui',
       cwd: './',
-      script: 'streamlit',
-      args: 'run src/ui.py --server.port 8501 --server.address 0.0.0.0',
+      command: './venv/bin/streamlit run src/ui.py --server.port 8501 --server.address 0.0.0.0',
       instances: 1,
       autorestart: true,
       watch: false,
