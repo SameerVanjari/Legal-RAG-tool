@@ -1,4 +1,4 @@
-# Core dependencies - using versions compatible with Python 3.13
+# Core dependencies - using versions known to work with Python 3.13
 langchain==0.1.0
 chromadb==0.4.15
 openai>=0.27.0
@@ -14,8 +14,8 @@ requests==2.31.0
 
 # Utilities
 python-dotenv==1.0.0
-# Fixed pydantic version to avoid compilation issues with Python 3.13
-pydantic==2.4.2
+# Using pydantic 1.x to avoid compilation issues with pydantic-core on Python 3.13
+pydantic==1.10.13
 
 # For development/testing - we'll implement a simple embedding fallback
 numpy>=1.24.0
