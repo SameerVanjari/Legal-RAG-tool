@@ -6,7 +6,11 @@ import uvicorn
 import os
 from dotenv import load_dotenv
 import sys
-sys.path.append('src')
+import os
+# Add the src directory to the path in a more robust way
+src_path = os.path.join(os.path.dirname(__file__))
+if src_path not in sys.path:
+    sys.path.append(src_path)
 
 from document_processor import LegalDocumentProcessor
 from vector_store import LegalVectorStore

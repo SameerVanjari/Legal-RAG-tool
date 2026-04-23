@@ -2,7 +2,7 @@
 langchain==0.1.0
 chromadb==0.4.15
 openai>=0.27.0
-fastapi==0.104.0
+fastapi==0.103.0
 uvicorn==0.27.0
 streamlit==1.32.0
 
@@ -14,8 +14,8 @@ requests==2.31.0
 
 # Utilities
 python-dotenv==1.0.0
-# Using pydantic 1.9.0 to avoid ForwardRef issue and compilation problems
-pydantic==1.9.0
+# Using pydantic 1.10.13 to avoid ForwardRef issue and compilation problems
+pydantic==1.10.13
 
 # For development/testing - we'll implement a simple embedding fallback
 numpy>=1.24.0
