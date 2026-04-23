@@ -14,8 +14,8 @@ requests==2.31.0
 
 # Utilities
 python-dotenv==1.0.0
-# Using pydantic 1.10.13 to avoid ForwardRef issue and compilation problems
-pydantic==1.10.13
+# Using pydantic 2.x for LangChain compatibility (resolves ForwardRef issues)
+pydantic>=2.0,<3.0
 
 # For development/testing - we'll implement a simple embedding fallback
 numpy>=1.24.0
