@@ -38,3 +38,4 @@ chroma_db/*
 .env
 venv/*
 venv_py311/*
+*.log

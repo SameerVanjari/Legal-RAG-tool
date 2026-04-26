@@ -42,22 +42,17 @@ class LegalVectorStore:
             )
         )
         
-        # Get or create collection - delete existing to ensure dimension compatibility
+        # Get or create collection
         try:
-            # Check if collection exists and get its metadata to see dimension
-            existing_collection = self.client.get_collection(name=collection_name)
-            # Delete and recreate to ensure clean state with correct dimensions
-            self.client.delete_collection(name=collection_name)
-            self.collection = self.client.create_collection(
-                name=collection_name,
-                metadata={"hnsw:space": "cosine"}
-            )
-        except:
+            self.collection = self.client.get_collection(name=collection_name)
+            print(f"[DEBUG] Using existing collection: {collection_name}")
+        except Exception:
             # Collection doesn't exist, create it
             self.collection = self.client.create_collection(
                 name=collection_name,
                 metadata={"hnsw:space": "cosine"}
             )
+            print(f"[DEBUG] Created new collection: {collection_name}")
         
         # Initialize LangChain Chroma wrapper
         self.vectorstore = Chroma(
@@ -155,10 +150,11 @@ class LegalVectorStore:
     
     def delete_collection(self) -> None:
         """Delete the entire collection."""
-        self.client.delete_collection(name=self.collection_name)
-        # Recreate the collection
+        # Delete the collection using the vectorstore's client
+        self.vectorstore._client.delete_collection(name=self.collection_name)
+        # Recreate the vectorstore
         self.vectorstore = Chroma(
-            client=self.client,
             collection_name=self.collection_name,
-            embedding_function=self.embeddings
+            embedding_function=self.embeddings,
+            persist_directory=self.persist_directory
         )
