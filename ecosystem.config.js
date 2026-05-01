@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'legal-rag-backend',
       cwd: './',
-      command: './venv/bin/python src/main.py',
+      command: './venv/bin/fastapi run src/main.py --port 5000 --host 0.0.0.0',
       instances: 1,
       autorestart: true,
       watch: false,
